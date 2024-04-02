@@ -3,14 +3,13 @@ import MiddleHeader from "./MiddleHeader"
 import TopHeader from "./TopHeader"
 
 const Header = () => {
-    return (
-      <>
-        <TopHeader />
-        <MiddleHeader />
-        <BottomHeader />
-      </>
-    )
-  }
-  
-  export default Header
-  
+  return (
+    <>
+      <TopHeader />
+      <MiddleHeader />
+      <BottomHeader />
+    </>
+  )
+}
+
+export default Header
