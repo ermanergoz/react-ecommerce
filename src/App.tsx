@@ -1,20 +1,21 @@
 import './components/Header'
 import Header from './components/Header'
-import CarouselDefault from "./components/CarouselDefault"
+import Carousel from './components/Carousal'
+import banner_1 from "./assets/images/banner_1.png"
+import banner_2 from "./assets/images/banner_2.jpg"
+import banner_3 from "./assets/images/banner_3.jpg"
 
 function App() {
-  let slides: string[] = [
-    "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
-    "https://wallpapercave.com/wp/wp3386769.jpg",
-    "https://wallpaperaccess.com/full/809523.jpg",
-    "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
+  let slides = [
+    banner_1,
+    banner_2,
+    banner_3
   ];
 
   return (
     <>
       <Header />
-      <div className="w-[60%] m-auto pt-11">
-    </div>
+      <Carousel slides={slides} />
     </>
   )
 }
