@@ -13,7 +13,7 @@ const Header = () => {
       <TopHeader />
       <MiddleHeader />
       <BottomHeader />
-       <Outlet />
+      <Outlet />
     </>
   )
 }
