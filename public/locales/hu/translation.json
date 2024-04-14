@@ -1,5 +1,5 @@
 {
-    "free_express_shipping": "Ingyenes expressz szállítás 90 USD feletti rendelés esetén",
+    "free_express_shipping": "Ingyenes expressz szállítás 90 USD rendelés esetén",
     "search": "Keresés",
     "our_stores": "Üzleteink",
     "track_your_order": "Kövesd a rendelésed",
@@ -13,8 +13,14 @@
     "features": "Jellemzők",
     "blog": "Blog",
     "elements": "Elemek",
-    "buy_portal": "Vásároljon Portált",
-    "special_offers": "Vásároljon portált",
+    "buy_portal": "Vásároljon portált",
+    "special_offers": "Különleges ajánlatok",
     "recipes": "Receptek",
-    "all_departments": "Minden Osztály"
-}
+    "all_departments": "Minden osztály",
+    "free_shipping_text": "Ingyenes kiszállítás minden 90 USD feletti rendelés esetén",
+    "free_shipping_title": "INGYENES SZÁLLÍTÁS",
+    "money_back_guarantee_text": "100% pénzvisszafizetési garancia",
+    "money_back_guarantee_title": "PÉNZVISSZAFIZETÉSI GARANCIA",
+    "online_support_title": "ONLINE TÁMOGATÁS 24/7",
+    "secure_payment": "BIZTONSÁGOS FIZETÉS"
+  }

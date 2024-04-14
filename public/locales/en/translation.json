@@ -16,5 +16,11 @@
     "buy_portal": "Buy Portal",
     "special_offers": "Special Offers",
     "recipes": "Recipes",
-    "all_departments": "All Departments"
+    "all_departments": "All Departments",
+    "free_shipping_text": "Free shipping on all orders over $90",
+    "free_shipping_title": "FREE SHIPMENT & RETURN",
+    "money_back_guarantee_text": "100% money back guarantee",
+    "money_back_guarantee_title": "MONEY BACK GUARANTEE",
+    "online_support_title": "ONLINE SUPPORT 24/7",
+    "secure_payment": "SECURE PAYMENT"
 }

@@ -3,7 +3,7 @@ import SearchBar from './SearchBar';
 import SignInButton from './buttons/SignInButton';
 import ShoppingCartButton from './buttons/ShoppingCartButton';
 import { handleClick } from "./Header";
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from "react-i18next";
 
 const MiddleHeader = () => {
     const { t } = useTranslation();
