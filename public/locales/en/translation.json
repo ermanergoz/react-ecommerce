@@ -22,5 +22,12 @@
     "money_back_guarantee_text": "100% money back guarantee",
     "money_back_guarantee_title": "MONEY BACK GUARANTEE",
     "online_support_title": "ONLINE SUPPORT 24/7",
-    "secure_payment": "SECURE PAYMENT"
+    "secure_payment": "SECURE PAYMENT",
+    "popular_departments": "Popular Departments",
+    "often_bought_products": "Products From These Categories Often Buy",
+    "cooking": "Cooking",
+    "fruits": "Fruits",
+    "vegetables": "Vegetables",
+    "breakfast": "Breakfast",
+    "product_count": "{{PRODUCT_COUNT}} Products"
 }

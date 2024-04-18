@@ -1,7 +1,7 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { CarousalNextArrow } from "./buttons/CarousalButton"
-import {CarousalPrevArrow} from "./buttons/CarousalButton"
+import { CarousalPrevArrow } from "./buttons/CarousalButton"
 import Slider from "react-slick";
 
 interface CarouselProps {
