@@ -5,6 +5,7 @@ import banner_3 from "../assets/images/banner_3.jpg";
 import Services from "../components/Services";
 import PopularDepartments from "../components/PopularDepartments";
 import MostPopular from "../components/MostPopularProducts";
+import WeeklySpecials from "../components/WeeklySpecials";
 
 const Home = () => {
     let bannerImages = [
@@ -26,6 +27,7 @@ const Home = () => {
                 </div>
                 <PopularDepartments />
                 <MostPopular />
+                <WeeklySpecials />
             </div>
         </div>
     )
