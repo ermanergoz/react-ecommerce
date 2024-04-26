@@ -6,6 +6,7 @@ import Services from "../components/Services";
 import PopularDepartments from "../components/PopularDepartments";
 import MostPopular from "../components/MostPopularProducts";
 import WeeklySpecials from "../components/WeeklySpecials";
+import Ads from "../components/Ads";
 
 const Home = () => {
     let bannerImages = [
@@ -21,13 +22,14 @@ const Home = () => {
     return (
         <div className="bg-gray-200">
             <Carousel buttonMargin={44} children={banners} slidesToShow={1} />
-            <div className='mx-16 my-8 space-y-8'>
+            <div className='mx-16 mt-8 space-y-8 pb-64'>
                 <div className='flex justify-center'>
                     <Services />
                 </div>
                 <PopularDepartments />
                 <MostPopular />
                 <WeeklySpecials />
+                <Ads />
             </div>
         </div>
     )
