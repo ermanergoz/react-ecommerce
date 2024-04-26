@@ -1,7 +1,6 @@
 export interface PopularDepartmentProps {
     title: string;
     productCountText: string;
-    style?: string;
     image: string;
     onClick: () => void;
 }

@@ -4,22 +4,28 @@ import banner_2 from "../assets/images/banner_2.jpg";
 import banner_3 from "../assets/images/banner_3.jpg";
 import Services from "../components/Services";
 import PopularDepartments from "../components/PopularDepartments";
+import MostPopular from "../components/MostPopularProducts";
 
 const Home = () => {
-    let slides = [
-        banner_1,
-        banner_2,
-        banner_3
+    let bannerImages = [
+        { src: banner_1, alt: "Banner 1" },
+        { src: banner_2, alt: "Banner 2" },
+        { src: banner_3, alt: "Banner 3" }
     ];
+
+    let banners = bannerImages.map((banner, index) => (
+        <img key={index} src={banner.src} alt={banner.alt} className="max-h-[480px] w-full" />
+    ));
 
     return (
         <div className="bg-gray-200">
-            <Carousel slides={slides} />
+            <Carousel buttonMargin={44} children={banners} slidesToShow={1} />
             <div className='mx-16 my-8 space-y-8'>
                 <div className='flex justify-center'>
                     <Services />
                 </div>
                 <PopularDepartments />
+                <MostPopular />
             </div>
         </div>
     )

@@ -13,7 +13,7 @@
   "features": "Jellemzők",
   "blog": "Blog",
   "elements": "Elemek",
-  "buy_portal": "Vásároljon portált",
+  "buy_portal": "Portál vásárlása",
   "special_offers": "Különleges ajánlatok",
   "recipes": "Receptek",
   "all_departments": "Minden osztály",
@@ -29,5 +29,12 @@
   "fruits": "Gyümölcsök",
   "vegetables": "Zöldségek",
   "breakfast": "Reggeli",
-  "product_count": "{{PRODUCT_COUNT}} Termékek"
+  "frozen": "Fagyott",
+  "other": "Egyéb",
+  "product_count": "{{PRODUCT_COUNT}} Termékek",
+  "most_popular": "Legnepszerubb",
+  "popular_products": "Minden újdonságunk exkluzív márkaválasztékban",
+  "nothing_to_display": "Nincs mit megjeleníteni",
+  "view_all": "Összes megtekintése",
+  "product_name": "A termék rövid neve"
 }

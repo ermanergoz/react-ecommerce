@@ -3,27 +3,32 @@ import "slick-carousel/slick/slick-theme.css";
 import { CarousalNextArrow } from "./buttons/CarousalButton"
 import { CarousalPrevArrow } from "./buttons/CarousalButton"
 import Slider from "react-slick";
+import { useTranslation } from "react-i18next";
 
 interface CarouselProps {
-    slides: string[];
+    children: React.ReactNode[];
+    slidesToShow: number;
+    buttonMargin: number;
 }
 
 const Carousel = (props: CarouselProps) => {
-    var settings = {
-        infinite: true,
-        nextArrow: <CarousalNextArrow />,
-        prevArrow: <CarousalPrevArrow />
-    };
+    const { t } = useTranslation();
 
-    return (
-        <Slider {...settings}>
-            {props.slides.map((s) => {
-                return (
-                    <img src={s as string} key={s} className="max-h-[480px] w-full" />
-                );
+    var settings = {
+        infinite: props.children.length > 1,
+        nextArrow: <CarousalNextArrow buttonMargin={props.buttonMargin} />,
+        prevArrow: <CarousalPrevArrow buttonMargin={props.buttonMargin} />,
+        slidesToShow: props.slidesToShow,
+    };
+    if (props.children.length > 0) {
+        return (<Slider {...settings}>
+            {props.children.map((s) => {
+                return (s);
             })}
-        </Slider>
-    );
+        </Slider>);
+    } else {
+        return (<p className="h-80">{t("nothing_to_display")}</p>);
+    }
 }
 
 export default Carousel;

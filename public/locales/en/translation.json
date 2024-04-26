@@ -29,5 +29,12 @@
     "fruits": "Fruits",
     "vegetables": "Vegetables",
     "breakfast": "Breakfast",
-    "product_count": "{{PRODUCT_COUNT}} Products"
+    "frozen": "Frozen",
+    "other": "Other",
+    "product_count": "{{PRODUCT_COUNT}} Products",
+    "most_popular": "Most Popular",
+    "popular_products": "All our new arrivals in an exclusive brand selection",
+    "nothing_to_display": "Nothing to display",
+    "view_all": "View All",
+    "product_name": "Product Short Name"
 }
