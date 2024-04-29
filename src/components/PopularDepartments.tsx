@@ -20,7 +20,7 @@ const PopularDepartments = () => {
         <div>
             <p className="text-2xl font-bold">{t("popular_departments")}</p>
             <p className="text-sm text-gray-500">{t("often_bought_products")}</p>
-            <div className="flex flex-row mt-4 space-x-4">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 mt-4">
                 {popularDepartments.map((popularDepartment) => {
                     return (
                         <PopularDepartment key={popularDepartment.title} title={popularDepartment.title} productCountText={popularDepartment.productCountText} image={popularDepartment.image} onClick={popularDepartment.onClick} />

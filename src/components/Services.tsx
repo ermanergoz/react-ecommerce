@@ -9,12 +9,13 @@ const Services = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="flex justify-between bg-white w-full px-16 rounded-md">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 bg-white px-4 lg:px-16 rounded-md w-full">
             <Service serviceText={t("free_shipping_text")} serviceTitle={t("free_shipping_title")} icon={ic_shipment} />
             <Service serviceText={t("money_back_guarantee_text")} serviceTitle={t("money_back_guarantee_title")} icon={ic_dollar} />
             <Service serviceText="Lorem ipsum dolor sit amet" serviceTitle={t("online_support_title")} icon={ic_support} />
             <Service serviceText="Lorem ipsum dolor sit amet" serviceTitle={t("secure_payment")} icon={ic_secure_payment} />
         </div>
+
     )
 }
 

@@ -16,13 +16,13 @@ const Home = () => {
     ];
 
     let banners = bannerImages.map((banner, index) => (
-        <img key={index} src={banner.src} alt={banner.alt} className="max-h-[480px] w-full" />
+        <img key={index} src={banner.src} alt={banner.alt} className="h-[200px] lg:h-[480px] w-full" />
     ));
 
     return (
         <div className="bg-gray-200">
             <Carousel buttonMargin={44} children={banners} slidesToShow={1} />
-            <div className='mx-16 mt-8 space-y-8 pb-64'>
+            <div className='lg:mx-16 mx-2 mt-8 space-y-8 pb-64'>
                 <div className='flex justify-center'>
                     <Services />
                 </div>

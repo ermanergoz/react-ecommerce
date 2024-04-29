@@ -10,21 +10,23 @@ const BottomHeader = () => {
 
   return (
     <div className="border border-gray-200">
-      <div className="flex justify-between items-left mx-16">
+      <div className="flex justify-between items-left lg:mx-16">
         <div className="flex items-center space-x-16">
           <DropdownMenu />
-          <button>{t("shop")}</button>
-          <button>{t("products")}</button>
-          <button>{t("features")}</button>
-          <button>{t("blog")}</button>
-          <button>{t("elements")}</button>
-          <button>{t("buy_portal")}</button>
+          <div className="hidden lg:block space-x-16">
+            <button>{t("shop")}</button>
+            <button>{t("products")}</button>
+            <button>{t("features")}</button>
+            <button>{t("blog")}</button>
+            <button>{t("elements")}</button>
+            <button>{t("buy_portal")}</button>
 
-        </div>
+          </div>
+          </div>
 
         <div className="flex items-center float-right space-x-8">
-          <IconButton style="font-bold" buttonText={t("special_offers")} icon={ic_special_offer} onClick={() => handleClick("/page404")} />
-          <IconButton style="font-bold" buttonText={t("recipes")} icon={ic_recipe} onClick={() => handleClick("/page404")} />
+          <IconButton style="hidden lg:block font-bold" buttonText={t("special_offers")} icon={ic_special_offer} onClick={() => handleClick("/page404")} />
+          <IconButton style="hidden lg:block font-bold" buttonText={t("recipes")} icon={ic_recipe} onClick={() => handleClick("/page404")} />
         </div>
       </div>
     </div>

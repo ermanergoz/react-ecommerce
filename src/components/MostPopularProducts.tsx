@@ -36,12 +36,12 @@ const MostPopular = () => {
             <p className="text-2xl font-bold">{t("most_popular")}</p>
             <p className="text-sm text-gray-500">{t("popular_products")}</p>
 
-            <div className="bg-white p-8 mt-4 rounded-md">
-                <div className='flex w-full space-x-4'>
+            <div className="bg-white p-4 lg:p-8 mt-4 rounded-md">
+                <div className='grid grid-cols-3 lg:grid-cols-6 gap-1 lg:gap-4 xl:w-2/3'>
                     {buttonLabels.map((label, index) => (
                         <button
                             key={index}
-                            className={`px-4 py-2 border-2 rounded-md ${activeButton === index ? 'border-green-600 text-green-600' : 'border-gray-200 text-black'}`}
+                            className={`py-2 border-2 rounded-md ${activeButton === index ? 'border-green-600 text-green-600' : 'border-gray-200 text-black'}`}
                             onClick={() => {
                                 setActiveButton(index);
                                 setSelectedCategory(label === t("view_all") ? 'All' : label);
@@ -51,7 +51,7 @@ const MostPopular = () => {
                         </button>
                     ))}
                 </div>
-                <div className='mt-4'>
+                <div className='mt-8'>
                     <Carousel buttonMargin={-52} children={filteredProducts} slidesToShow={filteredProducts.length < 6 ? filteredProducts.length : 6} />
                 </div>
             </div>

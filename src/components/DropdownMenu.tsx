@@ -24,20 +24,79 @@ export default function DropdownLinkButton(): JSX.Element {
 
             <TEDropdownMenu>
                 <TEDropdownItem>
-                    <a href="#" className="block w-full min-w-[160px] cursor-pointer whitespace-nowrap bg-transparent px-4 py-2 text-sm text-left font-normal pointer-events-auto text-neutral-700 hover:bg-neutral-100">
-                        Action
+                    <a href="/page404" className="block w-full min-w-[160px] cursor-pointer whitespace-nowrap bg-transparent px-4 py-2 text-sm text-left font-normal pointer-events-auto text-neutral-700 hover:bg-neutral-100">
+                        {t("shop")}
                     </a>
                 </TEDropdownItem>
                 <TEDropdownItem>
-                    <a href="#" className="block w-full min-w-[160px] cursor-pointer whitespace-nowrap bg-transparent px-4 py-2 text-sm text-left font-normal pointer-events-auto text-neutral-700 hover:bg-neutral-100">
-                        Another action
+                    <a href="/page404" className="block w-full min-w-[160px] cursor-pointer whitespace-nowrap bg-transparent px-4 py-2 text-sm text-left font-normal pointer-events-auto text-neutral-700 hover:bg-neutral-100">
+                        {t("products")}
                     </a>
                 </TEDropdownItem>
                 <TEDropdownItem>
-                    <a href="#" className="block w-full min-w-[160px] cursor-pointer whitespace-nowrap bg-transparent px-4 py-2 text-sm text-left font-normal pointer-events-auto text-neutral-700 hover:bg-neutral-100">
-                        Something else here
+                    <a href="/page404" className="block w-full min-w-[160px] cursor-pointer whitespace-nowrap bg-transparent px-4 py-2 text-sm text-left font-normal pointer-events-auto text-neutral-700 hover:bg-neutral-100">
+                        {t("features")}
                     </a>
                 </TEDropdownItem>
+                <TEDropdownItem>
+                    <a href="/page404" className="block w-full min-w-[160px] cursor-pointer whitespace-nowrap bg-transparent px-4 py-2 text-sm text-left font-normal pointer-events-auto text-neutral-700 hover:bg-neutral-100">
+                        {t("blog")}
+                    </a>
+                </TEDropdownItem>
+                <TEDropdownItem>
+                    <a href="/page404" className="block w-full min-w-[160px] cursor-pointer whitespace-nowrap bg-transparent px-4 py-2 text-sm text-left font-normal pointer-events-auto text-neutral-700 hover:bg-neutral-100">
+                        {t("elements")}
+                    </a>
+                </TEDropdownItem>
+                <TEDropdownItem>
+                    <a href="/page404" className="block w-full min-w-[160px] cursor-pointer whitespace-nowrap bg-transparent px-4 py-2 text-sm text-left font-normal pointer-events-auto text-neutral-700 hover:bg-neutral-100">
+                        {t("buy_portal")}
+                    </a>
+                </TEDropdownItem>
+                <div className="block lg:hidden">
+                    <hr></hr>
+                    <TEDropdownItem>
+                        <a href="/page404" className="block w-full min-w-[160px] cursor-pointer whitespace-nowrap bg-transparent px-4 py-2 text-sm text-left font-normal pointer-events-auto text-neutral-700 hover:bg-neutral-100">
+                            {t("special_offers")}
+                        </a>
+                    </TEDropdownItem>
+                    <TEDropdownItem>
+                        <a href="/page404" className="block w-full min-w-[160px] cursor-pointer whitespace-nowrap bg-transparent px-4 py-2 text-sm text-left font-normal pointer-events-auto text-neutral-700 hover:bg-neutral-100">
+                            {t("recipes")}
+                        </a>
+                    </TEDropdownItem>
+                    <TEDropdownItem>
+                        <a href="/page404" className="block w-full min-w-[160px] cursor-pointer whitespace-nowrap bg-transparent px-4 py-2 text-sm text-left font-normal pointer-events-auto text-neutral-700 hover:bg-neutral-100">
+                            {t("our_stores")}
+                        </a>
+                    </TEDropdownItem>
+                    <TEDropdownItem>
+                        <a href="/page404" className="block w-full min-w-[160px] cursor-pointer whitespace-nowrap bg-transparent px-4 py-2 text-sm text-left font-normal pointer-events-auto text-neutral-700 hover:bg-neutral-100">
+                            {t("track_your_order")}
+                        </a>
+                    </TEDropdownItem>
+                    <TEDropdownItem>
+                        <a href="/page404" className="block w-full min-w-[160px] cursor-pointer whitespace-nowrap bg-transparent px-4 py-2 text-sm text-left font-normal pointer-events-auto text-neutral-700 hover:bg-neutral-100">
+                            {t("help")}
+                        </a>
+                    </TEDropdownItem>
+                    <TEDropdownItem>
+                        <a href="/page404" className="block w-full min-w-[160px] cursor-pointer whitespace-nowrap bg-transparent px-4 py-2 text-sm text-left font-normal pointer-events-auto text-neutral-700 hover:bg-neutral-100">
+                            {t("wishlist")}
+                        </a>
+                    </TEDropdownItem>
+                <hr></hr>
+                <TEDropdownItem>
+                    <a href="/page404" className="block w-full min-w-[160px] cursor-pointer whitespace-nowrap bg-transparent px-4 py-2 text-sm text-left font-normal pointer-events-auto text-neutral-700 hover:bg-neutral-100">
+                        {t("sign_in")}
+                    </a>
+                </TEDropdownItem>
+                <TEDropdownItem>
+                    <a href="/page404" className="block w-full min-w-[160px] cursor-pointer whitespace-nowrap bg-transparent px-4 py-2 text-sm text-left font-normal pointer-events-auto text-neutral-700 hover:bg-neutral-100">
+                        {t("shopping_cart")}
+                    </a>
+                </TEDropdownItem>
+                </div>
             </TEDropdownMenu>
         </TEDropdown>
     );

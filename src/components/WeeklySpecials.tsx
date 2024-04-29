@@ -29,7 +29,7 @@ const WeeklySpecials = () => {
             <p className="text-2xl font-bold">{t("this_weeks_specials")}</p>
             <p className="text-sm text-gray-500">{t("special_brands")}</p>
 
-            <div className="bg-white p-8 mt-4 rounded-md border border-red-600">
+            <div className="bg-white p-4 lg:p-8 mt-4 rounded-md border border-red-600">
                 <Carousel buttonMargin={-52} children={products} slidesToShow={products.length < 6 ? products.length : 6} />
             </div>
         </div>

@@ -19,15 +19,28 @@ const Carousel = (props: CarouselProps) => {
         nextArrow: <CarousalNextArrow buttonMargin={props.buttonMargin} />,
         prevArrow: <CarousalPrevArrow buttonMargin={props.buttonMargin} />,
         slidesToShow: props.slidesToShow,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    autoplay: true
+                }
+            }
+        ]
     };
+
     if (props.children.length > 0) {
-        return (<Slider {...settings}>
-            {props.children.map((s) => {
-                return (s);
-            })}
-        </Slider>);
+        return (
+            <Slider {...settings}>
+                {props.children.map((s) => {
+                    return (s);
+                })}
+            </Slider>);
     } else {
-        return (<p className="h-80">{t("nothing_to_display")}</p>);
+        return (<p>{t("nothing_to_display")}</p>);
     }
 }
 

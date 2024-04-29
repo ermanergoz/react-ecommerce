@@ -10,8 +10,10 @@ export const handleClick = (link: string) => {
 const Header = () => {
   return (
     <>
-      <TopHeader />
-      <MiddleHeader />
+      <div className="hidden lg:block">
+        <TopHeader />
+        <MiddleHeader />
+      </div>
       <BottomHeader />
       <Outlet />
     </>
