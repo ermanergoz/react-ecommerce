@@ -1,4 +1,4 @@
-import DropdownMenu from "./DropdownMenu";
+import DropdownMenu from "./SlidingMenu";
 import ic_special_offer from "../assets/images/ic_special_offer.svg";
 import ic_recipe from "../assets/images/ic_recipe.svg";
 import IconButton from "./buttons/IconButton";

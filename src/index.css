@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.carousal-button {
-    background-color: chartreuse;
-  }
-  
+nav {
+  overflow-y: scroll; 
+  height: 100%;
+}
