@@ -1,0 +1,19 @@
+# Dependency directories
+node_modules/
+
+# Production build directory
+dist/
+
+# Development server
+.vite/
+
+# Environment variables file
+.env
+
+# IDE files
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
