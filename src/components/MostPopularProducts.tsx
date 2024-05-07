@@ -21,13 +21,13 @@ const MostPopular = () => {
 
     const buttonLabels: string[] = [t("view_all"), t("breakfast"), t("cooking"), t("frozen"), t("fruits"), t("vegetables")];
     const popularProducts: React.ReactNode[] = [
-        <PopularProduct image={img_meat} productCategory={t("cooking")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
-        <PopularProduct image={img_coconut} productCategory={t("fruits")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
-        <PopularProduct image={img_pasta} productCategory={t("cooking")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
-        <PopularProduct image={img_pinapple} productCategory={t("fruits")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
-        <PopularProduct image={img_banana} productCategory={t("fruits")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
-        <PopularProduct image={img_wine} productCategory={t("other")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
-        <PopularProduct image={img_pizza} productCategory={t("frozen")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />
+        <PopularProduct key={0} image={img_meat} productCategory={t("cooking")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
+        <PopularProduct key={1} image={img_coconut} productCategory={t("fruits")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
+        <PopularProduct key={2} image={img_pasta} productCategory={t("cooking")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
+        <PopularProduct key={3} image={img_pinapple} productCategory={t("fruits")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
+        <PopularProduct key={4} image={img_banana} productCategory={t("fruits")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
+        <PopularProduct key={5} image={img_wine} productCategory={t("other")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
+        <PopularProduct key={6} image={img_pizza} productCategory={t("frozen")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />
     ]
     const filteredProducts = selectedCategory === 'All' ? popularProducts : popularProducts.filter(product => t((product as React.ReactElement).props.productCategory) === selectedCategory);
 

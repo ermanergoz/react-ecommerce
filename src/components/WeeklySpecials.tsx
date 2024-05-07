@@ -16,12 +16,12 @@ const WeeklySpecials = () => {
     const { t } = useTranslation();
 
     const products: React.ReactNode[] = [
-        <PopularProduct image={img_coffee} productCategory={t("other")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
-        <PopularProduct image={img_grape} productCategory={t("fruits")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
-        <PopularProduct image={img_magic_toast} productCategory={t("breakfast")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
-        <PopularProduct image={img_watermelon} productCategory={t("fruits")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
-        <PopularProduct image={img_banana} productCategory={t("fruits")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
-        <PopularProduct image={img_pizza} productCategory={t("frozen")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />
+        <PopularProduct key={0} image={img_coffee} productCategory={t("other")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
+        <PopularProduct key={1} image={img_grape} productCategory={t("fruits")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
+        <PopularProduct key={2} image={img_magic_toast} productCategory={t("breakfast")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
+        <PopularProduct key={3} image={img_watermelon} productCategory={t("fruits")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
+        <PopularProduct key={4} image={img_banana} productCategory={t("fruits")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />,
+        <PopularProduct key={5} image={img_pizza} productCategory={t("frozen")} productName={t("product_name")} oldPrice={59.90} newPrice={49.00} onClick={buttonClicked} />
     ]
 
     return (
