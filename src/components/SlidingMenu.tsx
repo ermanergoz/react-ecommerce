@@ -2,6 +2,7 @@ import ic_hamburger from "../assets/images/ic_hamburger.svg"
 import ic_arrow_down from "../assets/images/ic_arrow_down.svg"
 import { useTranslation } from 'react-i18next'
 import { useState } from 'react';
+import Link from "./Link"
 
 
 export default function SlidingMenu() {
@@ -21,52 +22,22 @@ export default function SlidingMenu() {
                 <button className="hover:text-white cursor-pointer w-full text-right p-4" onClick={toggleMenu}>{t("close")}</button>
 
                 <nav className="mt-16">
-                    <a href="/" className="block w-full px-4 py-2 hover:bg-green-500">
-                        {t("home")}
-                    </a>
-                    <a href="/page404" className="block w-full px-4 py-2 hover:bg-green-500">
-                        {t("shop")}
-                    </a>
-                    <a href="/page404" className="block w-full px-4 py-2 hover:bg-green-500">
-                        {t("products")}
-                    </a>
-                    <a href="/page404" className="block w-full px-4 py-2 hover:bg-green-500">
-                        {t("features")}
-                    </a>
-                    <a href="/page404" className="block w-full px-4 py-2 hover:bg-green-500">
-                        {t("blog")}
-                    </a>
-                    <a href="/page404" className="block w-full px-4 py-2 hover:bg-green-500">
-                        {t("elements")}
-                    </a>
-                    <a href="/page404" className="block w-full px-4 py-2 hover:bg-green-500">
-                        {t("buy_portal")}
-                    </a>
+                    <Link children={t("home")} destination="/" variant="full" />
+                    <Link children={t("shop")} variant="full" />
+                    <Link children={t("products")} variant="full" />
+                    <Link children={t("features")} variant="full" />
+                    <Link children={t("blog")} variant="full" />
+                    <Link children={t("elements")} variant="full" />
+                    <Link children={t("buy_portal")} variant="full" />
                     <div className="block lg:hidden">
-                        <a href="/page404" className="block w-full px-4 py-2 hover:bg-green-500">
-                            {t("special_offers")}
-                        </a>
-                        <a href="/page404" className="block w-full px-4 py-2 hover:bg-green-500">
-                            {t("recipes")}
-                        </a>
-                        <a href="/page404" className="block w-full px-4 py-2 hover:bg-green-500">
-                            {t("our_stores")}
-                        </a>
-                        <a href="/page404" className="block w-full px-4 py-2 hover:bg-green-500">
-                            {t("track_your_order")}
-                        </a>
-                        <a href="/page404" className="block w-full px-4 py-2 hover:bg-green-500">
-                            {t("help")}
-                        </a>
-                        <a href="/page404" className="block w-full px-4 py-2 hover:bg-green-500">
-                            {t("wishlist")}
-                        </a>
-                        <a href="/page404" className="block w-full px-4 py-2 hover:bg-green-500">
-                            {t("sign_in")}
-                        </a>
-                        <a href="/page404" className="block w-full px-4 py-2 hover:bg-green-500">
-                            {t("shopping_cart")}
-                        </a>
+                        <Link children={t("special_offers")} variant="full" />
+                        <Link children={t("recipes")} variant="full" />
+                        <Link children={t("our_stores")} variant="full" />
+                        <Link children={t("track_your_order")} variant="full" />
+                        <Link children={t("help")} variant="full" />
+                        <Link children={t("wishlist")} variant="full" />
+                        <Link children={t("sign_in")} variant="full" />
+                        <Link children={t("shopping_cart")} variant="full" />
                     </div>
                 </nav>
             </div>
