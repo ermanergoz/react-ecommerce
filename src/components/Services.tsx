@@ -6,17 +6,32 @@ import ic_secure_payment from "../assets/images/ic_secure_payment.svg";
 import { useTranslation } from "react-i18next";
 
 const Services = () => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
-    return (
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 bg-white px-4 lg:px-16 rounded-md w-full">
-            <Service serviceText={t("free_shipping_text")} serviceTitle={t("free_shipping_title")} icon={ic_shipment} />
-            <Service serviceText={t("money_back_guarantee_text")} serviceTitle={t("money_back_guarantee_title")} icon={ic_dollar} />
-            <Service serviceText="Lorem ipsum dolor sit amet" serviceTitle={t("online_support_title")} icon={ic_support} />
-            <Service serviceText="Lorem ipsum dolor sit amet" serviceTitle={t("secure_payment")} icon={ic_secure_payment} />
-        </div>
+  return (
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 bg-white px-4 lg:px-16 rounded-md w-full">
+      <Service
+        serviceText={t("free_shipping_text")}
+        serviceTitle={t("free_shipping_title")}
+        icon={ic_shipment}
+      />
+      <Service
+        serviceText={t("money_back_guarantee_text")}
+        serviceTitle={t("money_back_guarantee_title")}
+        icon={ic_dollar}
+      />
+      <Service
+        serviceText="Lorem ipsum dolor sit amet"
+        serviceTitle={t("online_support_title")}
+        icon={ic_support}
+      />
+      <Service
+        serviceText="Lorem ipsum dolor sit amet"
+        serviceTitle={t("secure_payment")}
+        icon={ic_secure_payment}
+      />
+    </div>
+  );
+};
 
-    )
-}
-
-export default Services
+export default Services;

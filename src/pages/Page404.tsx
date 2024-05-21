@@ -11,7 +11,7 @@ const Page404 = () => {
         <p className="text-center text-lg ">Page not found</p>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Page404
+export default Page404;

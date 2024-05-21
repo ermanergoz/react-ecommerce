@@ -3,7 +3,7 @@ import ic_special_offer from "../assets/images/ic_special_offer.svg";
 import ic_recipe from "../assets/images/ic_recipe.svg";
 import Button from "./Button";
 import { handleClick } from "./Header";
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from "react-i18next";
 
 const BottomHeader = () => {
   const { t } = useTranslation();
@@ -20,7 +20,6 @@ const BottomHeader = () => {
             <button>{t("blog")}</button>
             <button>{t("elements")}</button>
             <button>{t("buy_portal")}</button>
-
           </div>
         </div>
 
@@ -31,7 +30,11 @@ const BottomHeader = () => {
             onClick={() => handleClick("/page404")}
           >
             <>
-              <img src={ic_special_offer} alt="Icon" className="object-contain h-6 px-1" />
+              <img
+                src={ic_special_offer}
+                alt="Icon"
+                className="object-contain h-6 px-1"
+              />
               <p>{t("special_offers")}</p>
             </>
           </Button>
@@ -42,14 +45,18 @@ const BottomHeader = () => {
             onClick={() => handleClick("/page404")}
           >
             <>
-              <img src={ic_recipe} alt="Icon" className="object-contain h-6 px-1" />
+              <img
+                src={ic_recipe}
+                alt="Icon"
+                className="object-contain h-6 px-1"
+              />
               <p>{t("recipes")}</p>
             </>
           </Button>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default BottomHeader
+export default BottomHeader;
